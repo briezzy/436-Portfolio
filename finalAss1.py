@@ -5,7 +5,7 @@ import matplotlib.ticker as mticker
 import plotly.express as px
 import os
 
-def make_finalass1(dataset_path):
+def make_finalAss1(dataset_path):
     # Loading dataset
     df = pd.read_csv(os.path.join(dataset_path, 'Top 500 Movies.csv'))
     
