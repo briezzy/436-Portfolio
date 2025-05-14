@@ -53,4 +53,8 @@ def make_misleadingVis(dataset_path):
     plt.grid(False)
     plt.colorbar(label="Number of Pages")
     
-    plt.show()
+    output_path = os.path.join("assets", "misleadingVis.png")
+    os.makedirs("assets", exist_ok=True)
+    plt.savefig(output_path)
+    plt.close()
+    return None
