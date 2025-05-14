@@ -29,6 +29,8 @@ def initialize_dashboard(datasets_path):
         html.Div([
             dcc.Graph(figure=make_finalAss1(datasets_path)),
             dcc.Graph(figure=make_misleadingVis(datasets_path)),
+            html.Img(src='/assets/finalass1.png', style={'width': '100%', 'marginBottom': '40px'}),
+            html.Img(src='/assets/misleadingVis.png', style={'width': '100%'})
         ], style={
             'display': 'block',
             'padding': '20px'
