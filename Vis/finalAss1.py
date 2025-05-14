@@ -63,5 +63,9 @@ def make_finalAss1(dataset_path):
     plt.legend(title='Decade', title_fontsize=12, fontsize=10, loc='upper left')
     
     plt.tight_layout()
-    plt.show()
-  
+    output_path = os.path.join("assets", "finalAss1.png")
+    os.makedirs("assets", exist_ok=True)
+    plt.savefig(output_path)
+    plt.close()
+    return None
+    
